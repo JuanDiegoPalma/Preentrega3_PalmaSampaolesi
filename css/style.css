@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Quicklime;
+    src: url(../assets/Quicklime.ttf);
+}
+#tituloDelEcommerce{
+display: flex;
+flex-direction: row;
+justify-content: space-between;    
+background-color: rgba(0, 0, 0, 0.815);
+padding: 25px; 
+font-family: Quicklime;
+text-align: left;
+color: blueviolet;
+}
+
+.container{
+    background-color: rgba(128, 128, 128, 0.466);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.card{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 15rem;
+    border: solid 2px black;
+    border-radius: 0.25rem;
+    margin: 1rem;
+}
+
+.img{
+    height: 13rem;
+    width: 13rem;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+};
